@@ -16,7 +16,7 @@ function getPort() {
 
 function getScript(port) {
     var url = 'https://localhost:' + port + '/path-2-file';
-    return "<script scr=" + url + "></script>";
+    return "<script src=" + url + "></script>";
 }
 
 function processRequest(req, res) {
