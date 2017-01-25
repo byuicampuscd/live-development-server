@@ -15,7 +15,7 @@ function getPort() {
 }
 
 function getScript(port) {
-    var url = 'https://localhost:' + port + '/fileDirectory';
+    var url = 'https://localhost:' + port + '/path-2-file';
     return "<script scr=" + url + "></script>";
 }
 
@@ -36,8 +36,6 @@ var options = {
     cert: fs.readFileSync(__dirname + "/keys/server.crt")
 }
 
-function main() {
-    https.createServer(options, processRequest).listen(port) // port dynamic
-    console.log("Server is active on port " + port);
-    console.log(getScript(port)); // also diaplay the script tag with data...
-}
+https.createServer(options, processRequest).listen(port) // port dynamic
+console.log("Server is active on port " + port);
+console.log(getScript(port)); // also diaplay the script tag with data...
