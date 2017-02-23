@@ -3,9 +3,9 @@ Live Development Server is a local node server that can be used to test local ja
 Run the following code in the command line.
 
 ```
-$ npm i -g https://github.com/byuicampuscd/live-development-server.git
+npm i -g https://github.com/byuicampuscd/live-development-server.git
 ```
-This will globally install the live development server. A window will pop up asking you to install the certificate. When installing the certificate do not let the computer automaticaly select teh certificate store. Instead save the certificate in the "Trusted Root Certification Authorities" store. 
+This will globally install the live development server. A window will pop up asking you to install the certificate. When installing the certificate do not let the computer automaticaly select the certificate store. Instead save the certificate in the "Trusted Root Certification Authorities" store. 
 
 
 ###Usage
