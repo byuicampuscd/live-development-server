@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 
 
-var fs = require("fs");
-var https = require("https");
-var url = require("url");
-var port = getPort();
+var fs = require("fs"),
+    https = require("https"),
+    url = require("url"),
+    chalk = require('chalk'),
+    port = getPort();
 
 
 function getPort() {
@@ -16,7 +17,7 @@ function getPort() {
 
 function getScript(port) {
     var url = 'https://localhost:' + port + '/path-2-file';
-    return "<script src=" + url + "></script>";
+    return '<script src="' + url + '"></script>';
 }
 
 function processRequest(req, res) {
@@ -37,5 +38,5 @@ var options = {
 }
 
 https.createServer(options, processRequest).listen(port) // port dynamic
-console.log("Server is active on port " + port);
-console.log(getScript(port)); // also diaplay the script tag with data...
+console.log(chalk.blue("Server is active on port " + port));
+console.log(chalk.green(getScript(port))); // also diaplay the script tag with data...

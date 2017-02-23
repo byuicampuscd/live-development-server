@@ -1,25 +1,27 @@
 {
-    "name": "live-development-server",
-    "version": "1.0.0",
-    "description": "\"Creates a node server to allow live html pages to link to local files\"",
-    "main": "launch.js",
-    "bin": {
-        "lds": "launch.js"
-    },
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "install": "start .\\keys\\server.crt"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/eljulander/live-development-server.git"
-    },
-    "author": "BYU-Idaho",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/eljulander/live-development-server/issues"
-    },
-    "homepage": "https://github.com/eljulander/live-development-server#readme",
-    "preferGlobal": "true"
-
+  "name": "live-development-server",
+  "version": "1.0.0",
+  "description": "\"Creates a node server to allow live html pages to link to local files\"",
+  "main": "launch.js",
+  "bin": {
+    "lds": "launch.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "start .\\keys\\server.crt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eljulander/live-development-server.git"
+  },
+  "author": "BYU-Idaho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eljulander/live-development-server/issues"
+  },
+  "homepage": "https://github.com/eljulander/live-development-server#readme",
+  "preferGlobal": "true",
+  "dependencies": {
+    "chalk": "^1.1.3"
+  }
 }
