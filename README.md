@@ -5,16 +5,11 @@ Run the following code in the command line.
 ```
 $ npm i -g https://github.com/byuicampuscd/live-development-server.git
 ```
-This will globally install the live development server. A window will pop up asking you to install the certificate. Just hit install/okay a bunch of times until it's been installed.
-
-Then you'll have to install it locally:
-```
-$ npm i https://github.com/byuicampuscd/live-development-server.git
-```
+This will globally install the live development server. A window will pop up asking you to install the certificate. When installing the certificate do not let the computer automaticaly select teh certificate store. Instead save the certificate in the "Trusted Root Certification Authorities" store. 
 
 
 ###Usage
-Run the live development server bp entering the following command:
+Run the live development server by opening the command line in the directory you want to serve the files from and entering the following command:
 ```
 $ lds [port number]
 ```
