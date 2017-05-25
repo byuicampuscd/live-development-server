@@ -14,8 +14,6 @@
     "type": "git",
     "url": "git+https://github.com/eljulander/live-development-server.git"
   },
-  "author": "BYU-Idaho",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/eljulander/live-development-server/issues"
   },
@@ -23,5 +21,7 @@
   "preferGlobal": "true",
   "dependencies": {
     "chalk": "^1.1.3"
-  }
+  },
+  "author": "BYU-Idaho",
+  "license": "MIT"
 }
