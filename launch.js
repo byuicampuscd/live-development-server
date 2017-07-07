@@ -53,7 +53,7 @@ function processRequest(req, res) {
                 //make div and set values
                 fileOut += `var ${fileData.name}Div = document.createElement('div');\n`;
                 fileOut += `${fileData.name}Div.setAttribute('id','${fileData.name}')\n`;
-                fileOut += `${fileData.name}Div.innerHTML = de  codeURIComponent(${fileData.name}Text)\n`;
+                fileOut += `${fileData.name}Div.innerHTML = decodeURIComponent(${fileData.name}Text)\n`;
                 
                 //put it in body
                 fileOut += `document.body.appendChild(${fileData.name}Div)`;
